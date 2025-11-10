@@ -1209,6 +1209,13 @@ const Hero = () => {
   const slides = useMemo(
     () => [
       {
+        leftImage: "/hero10.jpg",
+        rightImage: "/hero9.jpg",
+        mobileImage: "/hero2.jpg",
+        leftTitle: "VIMAL LAXMI - BORIVALI(W) ",
+        rightTitle: "SHREE VARDHMAN - BORIVALI(W)",
+      },
+      {
         leftImage: "/hero2.jpg",
         rightImage: "/hero1.jpg",
         mobileImage: "/hero2.jpg",
@@ -1285,11 +1292,12 @@ const Hero = () => {
       {/* ✅ Desktop / Tablet View */}
       <div className="hidden md:flex absolute inset-0">
         {/* Left Half */}
-        <div className="w-1/2 h-full flex flex-col items-center relative overflow-hidden">
+        <div className="w-1/2 h-full flex flex-col items-center relative overflow-hidden group">
+          {/* IMAGE */}
           <AnimatePresence mode="popLayout">
             <motion.div
               key={slides[currentSlide].leftImage}
-              className="absolute inset-0 w-full h-full bg-cover bg-center"
+              className="absolute inset-0 w-full h-full bg-cover bg-center transition-transform duration-700 "
               style={{
                 backgroundImage: `url(${slides[currentSlide].leftImage})`,
               }}
@@ -1300,9 +1308,9 @@ const Hero = () => {
             />
           </AnimatePresence>
 
-          {/* Text at Bottom Center */}
-          <div className="absolute -bottom-1 w-full flex justify-center z-20 px-2">
-            <div className="bg-white backdrop-blur-sm px-3 md:px-4 py-2 rounded-lg flex flex-col items-center">
+          {/* TEXT BOX (hidden until hover) */}
+          <div className="absolute -bottom-1 w-full flex justify-center z-20 px-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            <div className="bg-white backdrop-blur-sm px-3 md:px-4 py-2 rounded-lg flex flex-col items-center shadow-md">
               <h3 className="text-[#171755] text-sm md:text-base lg:text-lg font-semibold drop-shadow-lg text-center">
                 {slides[currentSlide].leftTitle}
               </h3>
@@ -1323,11 +1331,12 @@ const Hero = () => {
         </div>
 
         {/* Right Half */}
-        <div className="w-1/2 h-full flex flex-col items-center relative overflow-hidden">
+         <div className="w-1/2 h-full flex flex-col items-center relative overflow-hidden group">
+          {/* IMAGE */}
           <AnimatePresence mode="popLayout">
             <motion.div
               key={slides[currentSlide].rightImage}
-              className="absolute inset-0 w-full h-full bg-cover bg-center"
+              className="absolute inset-0 w-full h-full bg-cover bg-center transition-transform duration-700 "
               style={{
                 backgroundImage: `url(${slides[currentSlide].rightImage})`,
               }}
@@ -1338,9 +1347,9 @@ const Hero = () => {
             />
           </AnimatePresence>
 
-          {/* Text at Bottom Center */}
-          <div className="absolute -bottom-1 w-full flex justify-center z-20 px-2">
-            <div className="bg-white backdrop-blur-sm px-3 md:px-4 py-2 rounded-lg flex flex-col items-center">
+          {/* TEXT BOX (hidden until hover) */}
+          <div className="absolute -bottom-1 w-full flex justify-center z-20 px-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            <div className="bg-white backdrop-blur-sm px-3 md:px-4 py-2 rounded-lg flex flex-col items-center shadow-md">
               <h3 className="text-[#171755] text-sm md:text-base lg:text-lg font-semibold drop-shadow-lg text-center">
                 {slides[currentSlide].rightTitle}
               </h3>

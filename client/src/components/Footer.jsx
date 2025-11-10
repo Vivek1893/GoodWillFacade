@@ -116,7 +116,7 @@ const Footer = () => {
 
       {/* ✅ TOP FOOTER (Black section like screenshot) */}
       <div
-        className="w-full text-white py-6 sm:py-8 px-4 sm:px-6 
+        className="w-full text-white bg-gradient-to-r from-blue-900/20 to-blue-800/60  py-6 sm:py-8 px-4 sm:px-6 
         border-t-4 border-[#F37021] rounded-tl-[30px] sm:rounded-tl-[40px] rounded-tr-[30px] sm:rounded-tr-[40px]"
       >
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 sm:gap-8">
