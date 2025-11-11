@@ -777,6 +777,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import SearchBar from "./SearchBar";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -999,6 +1000,12 @@ const Navbar = () => {
             >
               CONTACT US
             </Link>
+          </nav>
+
+          {/* Right Side - Search & Social Icons */}
+          <div className="hidden lg:flex items-center space-x-4">
+            {/* Search Bar */}
+            <SearchBar />
 
             {/* Desktop Social Icons */}
             <div className="flex items-center space-x-4 pl-4 border-l border-gray-300">
@@ -1027,7 +1034,7 @@ const Navbar = () => {
                 <FaWhatsapp size={18} />
               </a>
             </div>
-          </nav>
+          </div>
 
           {/* Mobile/Tablet Menu Button */}
           <button
@@ -1143,6 +1150,11 @@ const Navbar = () => {
             >
               CONTACT US
             </Link>
+
+            {/* Mobile Search Bar */}
+            <div className="px-6 py-3 border-t border-gray-100">
+              <SearchBar />
+            </div>
 
             {/* Mobile Social Icons */}
             <div className="flex justify-center items-center space-x-6 py-4 border-t-2 border-orange-200 rounded-b-3xl bg-orange-50">

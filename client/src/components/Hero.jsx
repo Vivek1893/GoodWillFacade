@@ -1383,50 +1383,20 @@ const Hero = () => {
 
       {/* Navigation Arrows */}
       <div className="absolute bottom-16 md:bottom-20 left-1/2 transform -translate-x-1/2 z-30 flex items-center space-x-8">
-        <button
-          onClick={prevSlide}
-          className="text-white hover:text-[#F37021] transition-colors"
-        >
+        <button onClick={prevSlide} className="text-white hover:text-[#F37021] transition-colors">
           <div className="flex items-center space-x-2 bg-black/60 backdrop-blur-sm px-4 py-3 rounded-full border border-white/30">
-            <svg
-              className="w-5 h-5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M15 19l-7-7 7-7"
-              />
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
             </svg>
-            <span className="text-sm hidden sm:block font-medium tracking-wider">
-              PREV
-            </span>
+            <span className="text-sm hidden sm:block font-medium tracking-wider">PREV</span>
           </div>
         </button>
 
-        <button
-          onClick={nextSlide}
-          className="text-white hover:text-[#F37021] transition-colors"
-        >
+        <button onClick={nextSlide} className="text-white hover:text-[#F37021] transition-colors">
           <div className="flex items-center space-x-2 bg-black/60 backdrop-blur-sm px-4 py-3 rounded-full border border-white/30">
-            <span className="text-sm hidden sm:block font-medium tracking-wider">
-              NEXT
-            </span>
-            <svg
-              className="w-5 h-5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M9 5l7 7-7 7"
-              />
+            <span className="text-sm hidden sm:block font-medium tracking-wider">NEXT</span>
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
           </div>
         </button>
@@ -1440,9 +1410,7 @@ const Hero = () => {
               key={index}
               onClick={() => setCurrentSlide(index)}
               className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                index === currentSlide
-                  ? "bg-[#F37021] scale-110"
-                  : "bg-white/50 hover:bg-white/80"
+                index === currentSlide ? "bg-[#F37021] scale-110" : "bg-white/50 hover:bg-white/80"
               }`}
             />
           ))}
