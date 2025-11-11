@@ -9,7 +9,7 @@ const ServicesAllInOne = () => {
     {
       icon: (
         <img
-          src="/lo.png"
+          src="/lo.webp"
           alt="ACP Cladding"
           className="h-14 w-14 object-contain"
         />
@@ -23,7 +23,7 @@ const ServicesAllInOne = () => {
     {
       icon: (
         <img
-          src="/lo.png"
+          src="/lo.webp"
           alt="Structural Glazing"
           className="h-14 w-14 object-contain"
         />
@@ -36,7 +36,7 @@ const ServicesAllInOne = () => {
     {
       icon: (
         <img
-          src="/lo.png"
+          src="/lo.webp"
           alt="Stone Cladding"
           className="h-14 w-14 object-contain"
         />
@@ -49,7 +49,7 @@ const ServicesAllInOne = () => {
     {
       icon: (
         <img
-          src="/lo.png"
+          src="/lo.webp"
           alt="Aluminum Windows"
           className="h-14 w-14 object-contain"
         />
@@ -62,7 +62,7 @@ const ServicesAllInOne = () => {
     {
       icon: (
         <img
-          src="/lo.png"
+          src="/lo.webp"
           alt="Railings"
           className="h-14 w-14 object-contain"
         />
@@ -75,7 +75,7 @@ const ServicesAllInOne = () => {
     {
       icon: (
         <img
-          src="/lo.png"
+          src="/lo.webp"
           alt="Skylight"
           className="h-14 w-14 object-contain"
         />
@@ -88,7 +88,7 @@ const ServicesAllInOne = () => {
     {
       icon: (
         <img
-          src="/lo.png"
+          src="/lo.webp"
           alt="MS Structure"
           className="h-14 w-14 object-contain"
         />
@@ -102,7 +102,7 @@ const ServicesAllInOne = () => {
     {
       icon: (
         <img
-          src="/lo.png"
+          src="/lo.webp"
           alt="Tensile Fabrics"
           className="h-14 w-14 object-contain"
         />

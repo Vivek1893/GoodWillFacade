@@ -1,48 +1,4 @@
-// import React from "react";
 
-// const ClientsSection = () => {
-//   const clients = [
-//     { name: "abof", logo: "/clientlogo/logo1.jpg" },
-//     { name: "abof", logo: "/clientlogo/logo2.jpg" },
-//     { name: "abof", logo: "/clientlogo/logo3.jpg" },
-//     { name: "abof", logo: "/clientlogo/logo4.jpg" },
-//     { name: "abof", logo: "/clientlogo/logo5.jpg" },
-//     { name: "abof", logo: "/clientlogo/logo6.jpg" },
-//     { name: "abof", logo: "/clientlogo/logo7.jpg" },
-//     { name: "abof", logo: "/clientlogo/logo8.jpg" },
-//     { name: "abof", logo: "/clientlogo/logo9.jpg" },
-//     { name: "abof", logo: "/clientlogo/logo10.jpg" },
-//     { name: "abof", logo: "/clientlogo/logo11.jpg" },
-
-//     { name: "abof", logo: "/clientlogo/logo12.jpg" },
-//     { name: "abof", logo: "/clientlogo/logo13.jpg" },
-//     { name: "abof", logo: "/clientlogo/logo14.jpg" },
-//     { name: "abof", logo: "/clientlogo/logo15.jpg" },
-//   ];
-
-//   return (
-//     <section className="py-16 bg-white">
-//       <div className="max-w-7xl mx-auto px-4 text-center">
-//         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-2">Our Clients</h2>
-//         <p className="text-gray-500 text-lg mb-12">Meet our happy clients</p>
-
-//         <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 items-center">
-//           {clients.map((client, index) => (
-//             <div key={index} className="flex items-center justify-center p-4">
-//               <img
-//                 src={client.logo}
-//                 alt={client.name}
-//                 className="max-h-30 object-contain"
-//               />
-//             </div>
-//           ))}
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default ClientsSection;
 
 
 

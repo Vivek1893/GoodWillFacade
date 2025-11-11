@@ -85,14 +85,14 @@ const ContactSection = () => {
         {/* Logo Branding - Top Right */}
         <div className="absolute top-4 sm:top-6 right-4 sm:right-6 z-30">
           <img
-            src="/logo.png"
+            src="/logo1.webp"
             alt="The Goodwill Facades Logo"
             className="h-12 sm:h-16 md:h-20 lg:h-24 w-auto"
           />
         </div>
         <div className="absolute inset-0  z-10" />
         <img
-          src="/contactus.jpg"
+          src="/contactus.webp"
           alt="Glass Railing System"
           className="w-full h-full object-cover"
         />

@@ -15,7 +15,7 @@ const Footer = () => {
           {/* LOGO - Responsive sizing */}
           <div className="flex justify-center lg:justify-start w-full lg:w-auto">
             <img
-              src="/logo.png"
+              src="/logo1.webp"
               alt="Goodwill Logo"
               className="w-16 sm:w-20 md:w-24 lg:w-28 xl:w-32 h-auto transition-all duration-300"
             />

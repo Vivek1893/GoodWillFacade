@@ -98,7 +98,7 @@ const Railings = () => {
       <section className="relative w-full h-screen max-h-[75vh] overflow-hidden">
         <div className="absolute top-6 right-6 z-30">
           <img
-            src="/logo.png"
+            src="/logo1.webp"
             alt="The Goodwill Facades Logo"
             className="h-18 md:h-25 w-auto"
           />
