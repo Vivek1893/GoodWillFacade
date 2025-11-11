@@ -49,7 +49,7 @@ const AboutUs = () => {
             Trusted Local <br className="hidden sm:block" /> Construction Partner in{" "}
             <span className="text-orange-500">India.</span>
           </h2>
-          <p className="text-sm sm:text-base md:text-lg text-left text-gray-600 mb-6 sm:mb-8">
+          <p className="text-sm sm:text-base md:text-lg text-left text-gray-900 mb-6 sm:mb-8">
             THE GOODWILL FACADE is a specialist Facade Design & Engineering
             group providing extensive services to developers, architects, facade
             contractors, and main contractors in the field of architectural

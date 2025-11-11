@@ -1,147 +1,13 @@
-// import React, { useState } from "react";
-// import { motion, AnimatePresence } from "framer-motion";
-// import { FaExpand, FaCheck } from "react-icons/fa";   // ✅ Added FaCheck import
-
-// const Tensile_Fabrics = () => {
-//   const [selectedImage, setSelectedImage] = useState(null);
-
-//   const benefits = [
-//     "Lightweight, rigid, and durable for modern structures.",
-//     "Ideal for building exteriors & signage with sleek designs.",
-//     "Weatherproof, fade-resistant & highly economical.",
-//     "Available in metallic, wood, and marble finishes.",
-//     "Excellent heat & sound insulation properties.",
-//     "High fire resistance for enhanced safety.",
-//   ];
-
-//   const designImages = [
-//     { id: 1, img: "/images/project1.webp", title: "Tensile Fabric Design 01" },
-//     { id: 2, img: "/images/project2.webp", title: "Tensile Fabric Design 02" },
-//     { id: 3, img: "/images/project3.webp", title: "Tensile Fabric Design 03" },
-//     { id: 4, img: "/images/project4.webp", title: "Tensile Fabric Design 04" },
-//     { id: 5, img: "/images/project5.webp", title: "Tensile Fabric Design 05" },
-//   ];
-
-//   const openImageModal = (img) => setSelectedImage(img);
-//   const closeImageModal = () => setSelectedImage(null);
-
-//   return (
-//     <div className="w-full font-sans bg-white">
-
-//       {/* ✅ HERO SECTION */}
-//       <section className="relative w-full h-screen max-h-[75vh] -mt-8 overflow-hidden">
-//         <img
-//           src="/servicesimg/tensile_img/tensile.png"
-//           alt="Tensile Fabrics"
-//           className="w-full h-full object-cover"
-//         />
-//         <div className="absolute inset-0 bg-black/60 z-10"></div>
-
-//         <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-4">
-//           <motion.h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
-//             Tensile <span className="text-orange-400">Fabric</span>
-//           </motion.h1>
-
-//           <motion.div className="w-24 h-[3px] bg-orange-500 rounded-full"></motion.div>
-//         </div>
-//       </section>
-
-//       {/* ✅ BENEFITS SECTION (same as Aluminum/Ms Structures layout) */}
-//       <section className="px-4 md:px-8 lg:px-16 py-20 bg-white">
-//         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
-
-//           <motion.div className="space-y-6">
-//             {benefits.map((benefit, i) => (
-//               <div key={i} className="flex items-start">
-//                 <div className="bg-blue-100 p-2 rounded-full mr-4 mt-1">
-//                   <FaCheck className="text-blue-600 text-sm" />
-//                 </div>
-//                 <p className="text-gray-700 text-base sm:text-xl">{benefit}</p>
-//               </div>
-//             ))}
-//           </motion.div>
-
-//           <motion.div className="relative group">
-//             <div className="rounded-tl-4xl rounded-br-4xl overflow-hidden">
-//               <img
-//                 src="/servicesimg/stone_img/stone.png"
-//                 className="w-full h-[600px] object-cover transition-transform duration-700 group-hover:scale-105"
-//               />
-//             </div>
-//           </motion.div>
-
-//         </div>
-//       </section>
-
-//       {/* ✅ SIMPLE DESIGN GRID (same layout as MS + Aluminum windows) */}
-//       <section className="px-4 sm:px-6 md:px-12 lg:px-24 py-20 bg-gray-50 text-center">
-//         <h2 className="text-3xl md:text-4xl font-bold tracking-tight leading-tight mb-4 text-[#0B3558]">
-//           Our Tensile Fabric Designs
-//         </h2>
-//         <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-12">
-//           Explore our premium tensile structure designs
-//         </p>
-
-//         <motion.div
-//           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-12"
-//           initial={{ opacity: 0 }}
-//           whileInView={{ opacity: 1 }}
-//           transition={{ duration: 0.6 }}
-//           viewport={{ once: true }}
-//         >
-//           {designImages.map((item, index) => (
-//             <motion.div
-//               key={item.id}
-//               className={`relative overflow-hidden rounded-tl-4xl rounded-br-4xl bg-white shadow-md hover:shadow-lg transition h-auto cursor-pointer ${
-//                 index === 0 ? "sm:col-span-2 md:col-span-2" : ""
-//               }`}
-//               onClick={() => openImageModal(item.img)}
-//             >
-
-//               {/* ✅ Image */}
-//               <div className="w-full h-[250px] sm:h-[320px] md:h-[450px] overflow-hidden">
-//                 <img
-//                   src={item.img}
-//                   alt={item.title}
-//                   className="w-full h-full object-cover object-center brightness-90 transform transition duration-500 group-hover:scale-110"
-//                 />
-//               </div>
-
-//               {/* ✅ Title Below Image + Orange underline */}
-//               <div className="py-4 px-3 text-center">
-//                 <h3 className="text-lg sm:text-xl font-semibold text-[#0B3558]">
-//                   {item.title}
-//                 </h3>
-//                 <div className="w-10 h-[3px] bg-orange-500 mt-2 mx-auto rounded-full"></div>
-//               </div>
-
-//             </motion.div>
-//           ))}
-//         </motion.div>
-//       </section>
-
-//       {/* ✅ IMAGE ZOOM MODAL */}
-//       <AnimatePresence>
-//         {selectedImage && (
-//           <motion.div
-//             className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
-//             onClick={closeImageModal}
-//           >
-//             <img
-//               src={selectedImage}
-//               className="max-w-full max-h-[90vh] object-contain rounded-lg"
-//             />
-//           </motion.div>
-//         )}
-//       </AnimatePresence>
-//     </div>
-//   );
-// };
-
-// export default Tensile_Fabrics;
-
 import React, { useState } from "react";
-import { FaCheck } from "react-icons/fa";
+import {
+  FaEye,
+  FaSun,
+  FaShieldAlt,
+  FaCloud,
+  FaVectorSquare,
+  FaCogs,
+} from "react-icons/fa";
+
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 
@@ -149,12 +15,30 @@ const Tensile_Fabrics = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   const benefits = [
-    "Lightweight, rigid, and durable for modern structures.",
-    "Ideal for building exteriors & signage with sleek designs.",
-    "Weatherproof, fade-resistant & highly economical.",
-    "Available in metallic, wood, and marble finishes.",
-    "Excellent heat & sound insulation properties.",
-    "High fire resistance for enhanced safety.",
+    {
+      text: "Frameless Modern Look — Spider glazing provides a sleek, transparent appearance with no visible frames for a premium architectural finish.",
+      icon: <FaEye className="text-[#F37021] text-xl sm:text-lg" />,
+    },
+    {
+      text: "Maximum Natural Light — Large uninterrupted glass panels allow maximum daylight, enhancing indoor brightness and energy efficiency.",
+      icon: <FaSun className="text-[#F37021] text-xl sm:text-lg" />,
+    },
+    {
+      text: "Strong & Secure System — Stainless-steel spider fittings ensure high structural strength and secure glass support, suitable for high-rise buildings.",
+      icon: <FaShieldAlt className="text-[#F37021] text-xl sm:text-lg" />,
+    },
+    {
+      text: "Weather & Noise Resistant — High-quality silicone and hardware ensure protection from wind, rain, dust, and external noise.",
+      icon: <FaCloud className="text-[#F37021] text-xl sm:text-lg" />,
+    },
+    {
+      text: "Flexible Design Options — Supports various shapes and configurations like facades, canopies, entrances, atriums, and skylights.",
+      icon: <FaVectorSquare className="text-[#F37021] text-xl sm:text-lg" />,
+    },
+    {
+      text: "Durable & Low Maintenance — Rust-proof fittings and toughened/laminated glass ensure long-term performance with minimal upkeep.",
+      icon: <FaCogs className="text-[#F37021] text-xl sm:text-lg" />,
+    },
   ];
 
   const projectData = [
@@ -283,11 +167,11 @@ const Tensile_Fabrics = () => {
                   viewport={{ once: true }}
                   className="flex items-start"
                 >
-                  <div className="bg-blue-100 p-2 rounded-full mr-4 mt-1">
-                    <FaCheck className="text-blue-600 text-sm" />
+                  <div className="bg-blue-100 p-2 rounded-full mr-4 mt-1 flex-shrink-0">
+                    {benefit.icon}
                   </div>
                   <p className="text-gray-700 text-base sm:text-xl">
-                    {benefit}
+                    {benefit.text}
                   </p>
                 </motion.div>
               ))}
@@ -335,7 +219,7 @@ const Tensile_Fabrics = () => {
           >
             Spider Fabrics
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto mt-4">
+          <p className="text-lg text-gray-900 max-w-2xl mx-auto mt-4">
             Explore our range of modern architectural Spider Fabrics
             installations.
           </p>

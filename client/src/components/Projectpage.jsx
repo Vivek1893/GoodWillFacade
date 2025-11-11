@@ -196,19 +196,19 @@ const Projects = () => {
       {/* Header Section */}
       <div className="mb-8 sm:mb-10 md:mb-12">
         <h2
-          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight leading-tight mb-3 sm:mb-4"
-          style={{
-            background:
-              "linear-gradient(90deg, #E86C0C 0%, #001F5F 70%, #C4C4C4 100%)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-            backgroundClip: "text",
-            color: "transparent",
-          }}
+          className="text-2xl text-[#0E2C4C] sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight leading-tight mb-3 sm:mb-4"
+          // style={{
+          //   background:
+          //     "linear-gradient(90deg, #E86C0C 0%, #001F5F 70%, #C4C4C4 100%)",
+          //   WebkitBackgroundClip: "text",
+          //   WebkitTextFillColor: "transparent",
+          //   backgroundClip: "text",
+          //   color: "transparent",
+          // }}
         >
           Our Projects
         </h2>
-        <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-2xl text-center sm:text-left mx-auto mt-3 sm:mt-4 px-2 sm:px-4">
+        <p className="text-sm sm:text-base md:text-lg text-gray-900 max-w-5xl text-center sm:text-left mx-auto mt-3 sm:mt-4 px-2 sm:px-4">
           From high-end homes to modern office spaces, each project is a
           reflection of quality, detail, and dedication.
         </p>

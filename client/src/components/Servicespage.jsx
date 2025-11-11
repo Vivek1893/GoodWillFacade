@@ -350,9 +350,9 @@ const ServicesAllInOne = () => {
               viewport={{ once: true }}
               className="inline-block mb-4 sm:mb-6"
             >
-              <div className="flex items-center justify-center space-x-2 sm:space-x-4 mb-4 sm:mb-6">
+              <div className="flex items-center justify-center space-x-2 sm:space-x-4 mb-4 sm:mb-6 ">
                 <div className="w-8 sm:w-12 h-px bg-gray-300"></div>
-                <span className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-orange-500 uppercase tracking-wider sm:tracking-widest">
+                <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl font-bold text-orange-500 uppercase tracking-wider sm:tracking-widest">
                   Our Services
                 </span>
                 <div className="w-8 sm:w-12 h-px bg-gray-300"></div>
@@ -366,11 +366,9 @@ const ServicesAllInOne = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
               viewport={{ once: true }}
-              className="text-sm sm:text-base md:text-lg text-gray-600 max-w-2xl mx-auto text-center sm:text-left leading-relaxed px-2"
+              className="text-sm sm:text-base md:text-lg text-gray-900 max-w-4xl mx-auto text-center sm:text-left leading-relaxed px-2 -mt-6"
             >
-              Delivering precision-engineered architectural solutions that
-              combine innovative design with uncompromising quality and
-              durability.
+            Delivering precision-engineered architectural solutions with innovative design and lasting quality.
             </motion.p>
           </div>
 

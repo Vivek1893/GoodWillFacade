@@ -132,7 +132,7 @@ const HiringPartners = () => {
   return (
     <div className="container mx-auto px-4 sm:px-6 mb-8 sm:mb-12 overflow-x-hidden"> 
       <div className="text-center max-w-4xl mx-auto mb-10 sm:mb-12 md:mb-16">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4">
           Our Clients
         </h2>
       </div>

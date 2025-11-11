@@ -27,10 +27,10 @@ const About = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
-            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-3 sm:mb-4 tracking-wide"
+            className="text-3xl  md:text-4xl  font-bold text-white mb-3 sm:mb-4 tracking-wide"
           >
-            <span className="text-white"> About </span>{" "}
-            <span className="text-orange-400">The Goodwill Facades</span>
+            <span className="text-white"> About The </span>{" "}
+            <span className="text-orange-400"> Goodwill Facades</span>
           </motion.h1>
 
           <motion.div
@@ -63,8 +63,8 @@ const About = () => {
           </div>
 
           {/* Right Side - Content */}
-          <div className="md:w-1/2 w-full text-gray-700 space-y-4 sm:space-y-6">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#171755] leading-tight">
+          <div className="md:w-1/2 w-full text-gray-900 space-y-4 sm:space-y-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#171755] leading-tight">
               About Us
             </h2>
             <p className="text-sm sm:text-base md:text-lg leading-relaxed">
@@ -105,10 +105,10 @@ const About = () => {
       <section className="bg-gray-50 py-8 sm:py-12 md:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
           <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-8 sm:mb-10 md:mb-12">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#171755] ">
               Our Story
             </h2>
-            <p className="mt-4 lg:mt-0 max-w-xl text-gray-600 text-sm sm:text-base md:text-lg">
+            <p className="mt-4 lg:mt-0 max-w-xl text-gray-900 text-sm sm:text-base md:text-lg">
               At THE GOODWILL FACADE, we redefine architectural elegance with
               cutting-edge façade engineering and design solutions.
             </p>
@@ -117,7 +117,7 @@ const About = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 items-center">
             {/* Left Text */}
             <div className="space-y-4 sm:space-y-6 md:space-y-8">
-              <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed">
+              <p className="text-gray-900 text-sm sm:text-base md:text-lg leading-relaxed">
                 Founded with a vision to transform skylines, THE GOODWILL FACADE
                 brings together innovation, craftsmanship, and engineering
                 precision. Our team specializes in delivering sustainable and
@@ -129,7 +129,7 @@ const About = () => {
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   Who We Are
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-900 text-sm sm:text-base md:text-lg leading-relaxed">
                   We are a specialist façade design and engineering group
                   committed to providing extensive services to developers,
                   architects, contractors, and builders in the field of
@@ -141,7 +141,7 @@ const About = () => {
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   Why We Exist
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-900 text-sm sm:text-base md:text-lg leading-relaxed">
                   Our mission is to blend design excellence with engineering
                   accuracy — helping clients create iconic structures that stand
                   the test of time while maintaining the highest standards of
@@ -178,11 +178,11 @@ const About = () => {
                 alt="Vision"
                 className="w-full h-40 sm:h-48 md:h-56 lg:h-64 xl:h-72 object-cover shadow-md rounded-tl-2xl sm:rounded-tl-3xl md:rounded-tl-4xl rounded-br-2xl sm:rounded-br-3xl md:rounded-br-4xl"
               />
-              <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-blue-800 uppercase tracking-wide">
+              <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-[#171755] uppercase tracking-wide">
                 Our Vision
               </h3>
-              <div className="w-12 h-[2px] bg-blue-600 mx-auto"></div>
-              <p className="text-gray-700 text-sm sm:text-base md:text-lg text-left leading-relaxed px-2">
+              <div className="w-12 h-[2px] bg-[#F37021] mx-auto"></div>
+              <p className="text-gray-900 text-sm sm:text-base md:text-lg text-left leading-relaxed px-2">
                 See Farther To Seek Out Competitive Business Advantages For Our
                 Clients Through The Innovative Use Of Technology And To Help
                 Them Achieve Long-term Success And Prosperity
@@ -196,11 +196,11 @@ const About = () => {
                 alt="Mission"
                 className="w-full h-40 sm:h-48 md:h-56 lg:h-64 xl:h-72 object-cover shadow-md rounded-tl-2xl sm:rounded-tl-3xl md:rounded-tl-4xl rounded-br-2xl sm:rounded-br-3xl md:rounded-br-4xl"
               />
-              <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-blue-800 uppercase tracking-wide">
+              <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-[#171755] uppercase tracking-wide">
                 Our Mission
               </h3>
-              <div className="w-12 h-[2px] bg-blue-600 mx-auto"></div>
-              <p className="text-gray-700 text-sm sm:text-base md:text-lg text-left leading-relaxed px-2">
+              <div className="w-12 h-[2px] bg-[#F37021] mx-auto"></div>
+              <p className="text-gray-900 text-sm sm:text-base md:text-lg text-left leading-relaxed px-2">
                 To Deliver Best To The Our Clients Through Innovative Use Of New
                 Technologies, Support, Services And Customer Referrals; And Also
                 To Be The Best Facade Company In Our Markets
@@ -214,11 +214,11 @@ const About = () => {
                 alt="Core Values"
                 className="w-full h-40 sm:h-48 md:h-56 lg:h-64 xl:h-72 object-cover shadow-md rounded-tl-2xl sm:rounded-tl-3xl md:rounded-tl-4xl rounded-br-2xl sm:rounded-br-3xl md:rounded-br-4xl"
               />
-              <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-blue-800 uppercase tracking-wide">
+              <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-[#171755] uppercase tracking-wide">
                 Core Values
               </h3>
-              <div className="w-12 h-[2px] bg-blue-600 mx-auto"></div>
-              <p className="text-gray-700 text-sm sm:text-base md:text-lg text-left leading-relaxed px-2">
+              <div className="w-12 h-[2px] bg-[#F37021] mx-auto"></div>
+              <p className="text-gray-900 text-sm sm:text-base md:text-lg text-left leading-relaxed px-2">
                 Our growth and success are based upon ethical practices,
                 integrity, respect, responsibility, safety, and trust.
               </p>

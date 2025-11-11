@@ -1,216 +1,11 @@
-// // ✅ Updated Stone_Cladding component with project gallery same as Aluminum Windows
-// import React, { useState } from "react";
-// import { FaCheck, FaExpand } from "react-icons/fa";
-// import { motion, AnimatePresence } from "framer-motion";
 
-// const Stone_Cladding = () => {
-//   const [selectedImage, setSelectedImage] = useState(null);
-
-//   const benefits = [
-//     "Lightweight, rigid, and durable for modern structures.",
-//     "Ideal for building exteriors & signage with sleek designs.",
-//     "Weatherproof, fade-resistant & highly economical.",
-//     "Available in metallic, wood, and marble finishes.",
-//     "Excellent heat & sound insulation properties.",
-//     "High fire resistance for enhanced safety.",
-//   ];
-
-//   const projectData = [
-//     {
-//       id: 1,
-//       title: "Stone Exterior Elevation",
-//       img: "/servicesimg/stone_img/stone1.jpg",
-//     },
-//     {
-//       id: 2,
-//       title: "Premium Stone Facade",
-//       img: "/servicesimg/stone_img/stone2.jpg",
-//     },
-//     {
-//       id: 3,
-//       title: "Modern Stone Design",
-//       img: "/servicesimg/stone_img/stone3.jpg",
-//     },
-//     {
-//       id: 4,
-//       title: "Commercial Stone Installation",
-//       img: "/servicesimg/stone_img/stone4.jpg",
-//     },
-//     {
-//       id: 5,
-//       title: "Luxury Interior Stone Work",
-//       img: "/servicesimg/stone_img/stone5.jpg",
-//     },
-//   ];
-
-//   const containerVariants = {
-//     hidden: { opacity: 0 },
-//     show: { opacity: 1, transition: { staggerChildren: 0.3 } },
-//   };
-
-//   const cardVariants = {
-//     hidden: { opacity: 0, scale: 0.9, y: 40 },
-//     show: {
-//       opacity: 1,
-//       scale: 1,
-//       y: 0,
-//       transition: { duration: 0.6, ease: "easeOut" },
-//     },
-//   };
-
-//   return (
-//     <div className="w-full font-sans -mt-8 bg-white">
-//       {/* HERO SECTION */}
-//       <section className="relative w-full h-screen max-h-[75vh] overflow-hidden">
-//         <div className="absolute top-6 right-6 z-30">
-//           <img src="/logo.png" className="h-18 md:h-25 w-auto" />
-//         </div>
-//         <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-blue-800/60 z-10"></div>
-
-//         <img
-//           src="/servicesimg/stone_img/stone.jpg"
-//           className="w-full h-full object-cover"
-//         />
-
-//         <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-4">
-//           <motion.h1
-//             initial={{ opacity: 0, y: 20 }}
-//             animate={{ opacity: 1, y: 0 }}
-//             transition={{ duration: 0.7 }}
-//             className="text-3xl md:text-3xl font-bold text-white mb-4 tracking-wide"
-//           >
-//             <span className="text-white">Stone</span>{" "}
-//             <span className="text-orange-400">Cladding</span>
-//           </motion.h1>
-//           <motion.p
-//             initial={{ opacity: 0 }}
-//             animate={{ opacity: 1 }}
-//             transition={{ delay: 0.3, duration: 0.5 }}
-//             className="text-base text-white/90 max-w-xl mx-auto mb-8"
-//           >
-//             Premium exterior elevation cladding with exceptional durability
-//           </motion.p>
-//         </div>
-//       </section>
-
-//       {/* BENEFITS SECTION */}
-//       <section className="px-4 md:px-8 lg:px-16 py-20 bg-white">
-//         <motion.h2
-//           initial={{ opacity: 0, y: 20 }}
-//           whileInView={{ opacity: 1, y: 0 }}
-//           transition={{ duration: 0.5 }}
-//           viewport={{ once: true }}
-//           className="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-900"
-//         >
-//           Why Choose{" "}
-//           <span className="text-orange-600">Stone Cladding?</span>
-//         </motion.h2>
-
-//         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
-//           <motion.div className="space-y-6">
-//             {benefits.map((benefit, i) => (
-//               <div key={i} className="flex items-start">
-//                 <div className="bg-blue-100 p-2 rounded-full mr-4 mt-1">
-//                   <FaCheck className="text-blue-600 text-sm" />
-//                 </div>
-//                 <p className="text-gray-700 text-base sm:text-xl">{benefit}</p>
-//               </div>
-//             ))}
-//           </motion.div>
-
-//           <motion.div className="relative group">
-//             <div className="rounded-tl-4xl rounded-br-4xl overflow-hidden">
-//               <img
-//                 src="/servicesimg/stone_img/stone.png"
-//                 className="w-full h-[600px] object-cover transition-transform duration-700 group-hover:scale-105"
-//               />
-//             </div>
-//           </motion.div>
-//         </div>
-//       </section>
-
-//       {/* PROJECT GALLERY - SAME STYLE AS ALUMINUM */}
-//       <section className="px-4 sm:px-6 md:px-12 lg:px-24 py-20 bg-gray-50 text-center">
-//         <h2
-//           className="text-3xl md:text-4xl font-bold mb-12"
-//           style={{
-//             background: "linear-gradient(90deg,#E86C0C,#001F5F,#C4C4C4)",
-//             WebkitBackgroundClip: "text",
-//             WebkitTextFillColor: "transparent",
-//           }}
-//         >
-//           Stone Cladding Designs
-//         </h2>
-
-//         <motion.div
-//           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-12"
-//           variants={containerVariants}
-//           initial="hidden"
-//           whileInView="show"
-//           viewport={{ once: true }}
-//         >
-//           {projectData.map((project, index) => (
-//             <motion.div
-//               key={project.id}
-//               variants={cardVariants}
-//               className={`relative overflow-hidden rounded-tl-4xl rounded-br-4xl group bg-white shadow-md hover:shadow-lg transition h-auto ${
-//                 index === 0 ? "sm:col-span-2 md:col-span-2" : ""
-//               }`}
-//               onClick={() => setSelectedImage(project.img)}
-//             >
-//               <div className="w-full h-[250px] sm:h-[320px] md:h-[450px] overflow-hidden">
-//                 <img
-//                   src={project.img}
-//                   className="w-full h-full object-cover brightness-90 transform transition duration-500 group-hover:scale-110"
-//                 />
-//               </div>
-//               <div className="py-4 px-3 text-left text-xl font-semibold text-[#0B3558]">
-//                 <h3>{project.title}</h3>
-//                 <div className="w-10 h-[3px] bg-[#F37021] mt-2 rounded-full"></div>
-//               </div>
-//             </motion.div>
-//           ))}
-//         </motion.div>
-//       </section>
-
-//       {/* MODAL */}
-//       <AnimatePresence>
-//         {selectedImage && (
-//           <motion.div
-//             initial={{ opacity: 0 }}
-//             animate={{ opacity: 1 }}
-//             exit={{ opacity: 0 }}
-//             className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
-//             onClick={() => setSelectedImage(null)}
-//           >
-//             <motion.div
-//               initial={{ scale: 0.9 }}
-//               animate={{ scale: 1 }}
-//               exit={{ scale: 0.9 }}
-//               className="relative max-w-4xl max-h-full"
-//             >
-//               <img
-//                 src={selectedImage}
-//                 className="max-w-full max-h-[90vh] object-contain rounded-lg"
-//               />
-//               <button
-//                 onClick={() => setSelectedImage(null)}
-//                 className="absolute top-4 right-4 bg-white/10 hover:bg-white/20 text-white p-2 rounded-full"
-//               >
-//                 ✕
-//               </button>
-//             </motion.div>
-//           </motion.div>
-//         )}
-//       </AnimatePresence>
-//     </div>
-//   );
-// };
-
-// export default Stone_Cladding;
 
 import React, { useState } from "react";
-import { FaCheck } from "react-icons/fa";
+
+import { FaStar, FaShieldAlt} from "react-icons/fa";
+import { GiBroom, GiSoundWaves, GiPaintBrush } from "react-icons/gi"; // from game-icons pack
+import { AiOutlineDollar } from "react-icons/ai"; // from Ant Design icons
+
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 
@@ -218,13 +13,32 @@ const Stone_Cladding = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   const benefits = [
-    "Lightweight, rigid, and durable for modern structures.",
-    "Ideal for building exteriors & signage with sleek designs.",
-    "Weatherproof, fade-resistant & highly economical.",
-    "Available in metallic, wood, and marble finishes.",
-    "Excellent heat & sound insulation properties.",
-    "High fire resistance for enhanced safety.",
-  ];
+  {
+    text: "Premium Natural Look — Achieve a luxurious stone finish that enhances the elegance and aesthetic appeal of any space.",
+    icon: <FaStar className="text-[#F37021] text-xl sm:text-lg" />,
+  },
+  {
+    text: "Lightweight & Cost-Effective — Enjoy the beauty of stone without the heavy weight or high cost of solid stone construction.",
+    icon: <AiOutlineDollar className="text-[#F37021] text-xl sm:text-lg" />,
+  },
+  {
+    text: "Durable & Long-Lasting — Resistant to heat, moisture, and harsh weather conditions, ensuring long-term performance.",
+    icon: <FaShieldAlt className="text-[#F37021] text-xl sm:text-lg" />,
+  },
+  {
+    text: "Low Maintenance — Does not fade, peel, or crack easily, and requires minimal cleaning or upkeep over time.",
+    icon: <GiBroom className="text-[#F37021] text-xl sm:text-lg" />,
+  },
+  {
+    text: "Thermal & Acoustic Insulation — Helps maintain indoor temperature and reduces external noise, improving comfort.",
+    icon: <GiSoundWaves className="text-[#F37021] text-xl sm:text-lg" />,
+  },
+  {
+    text: "Versatile Design Options — Available in various textures, colors, and finishes for both interior and exterior applications.",
+    icon: <GiPaintBrush className="text-[#F37021] text-xl sm:text-lg" />,
+  },
+];
+
 
   const projectData = [
     {
@@ -352,11 +166,11 @@ const Stone_Cladding = () => {
                   viewport={{ once: true }}
                   className="flex items-start"
                 >
-                  <div className="bg-blue-100 p-2 rounded-full mr-4 mt-1">
-                    <FaCheck className="text-blue-600 text-sm" />
+                  <div className="bg-blue-100 p-2 rounded-full mr-4 mt-1 flex-shrink-0">
+                    {benefit.icon}
                   </div>
                   <p className="text-gray-700 text-base sm:text-xl">
-                    {benefit}
+                    {benefit.text}
                   </p>
                 </motion.div>
               ))}
@@ -404,7 +218,7 @@ const Stone_Cladding = () => {
           >
             Stone Cladding
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto mt-4">
+          <p className="text-lg text-gray-900 max-w-2xl mx-auto mt-4">
             Explore our range of modern architectural Stone Cladding
             installations.
           </p>

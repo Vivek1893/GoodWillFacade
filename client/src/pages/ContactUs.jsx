@@ -81,7 +81,7 @@ const ContactSection = () => {
       className="bg-gradient-to-br from-gray-50 -mt-8 to-blue-50/30 "
     >
       {/* Hero Banner */}
-      <div className="relative w-full h-[50vh] sm:h-[60vh] md:h-[70vh] min-h-[400px] sm:min-h-[500px] md:min-h-[600px] overflow-hidden">
+      <div className="relative w-full  h-[50vh] sm:h-[60vh] md:h-[70vh] min-h-[400px] sm:min-h-[500px] md:min-h-[600px] overflow-hidden">
         {/* Logo Branding - Top Right */}
         <div className="absolute top-4 sm:top-6 right-4 sm:right-6 z-30">
           <img
@@ -96,6 +96,7 @@ const ContactSection = () => {
           alt="Glass Railing System"
           className="w-full h-full object-cover"
         />
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-blue-800/60 z-10" />
 
         {/* Animated Background Elements */}
         <div className="absolute inset-0 z-0">
@@ -111,17 +112,18 @@ const ContactSection = () => {
             transition={{ duration: 0.7 }}
             className="text-3xl md:text-3xl font-bold text-white mb-4 tracking-wide"
           >
-            <span className="text-blue"> Get </span>{" "}
+            <span className="text-white"> Get </span>{" "}
             <span className="text-orange-400">In Touch</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.5 }}
-            className="text-base text-black max-w-xl mx-auto mb-8"
+            className="text-lg text-white max-w-3xl mx-auto mb-8"
           >
-        Whether it's façade design, cladding, or interior solutions — we are here to support you at every step.
-Submit your inquiry, and we will get back to you within 24 hours.
+            Whether it's façade design, cladding, or interior solutions — we are
+            here to support you at every step. Submit your inquiry, and we will
+            get back to you within 24 hours.
           </motion.p>
           <motion.div
             initial={{ scaleX: 0 }}
