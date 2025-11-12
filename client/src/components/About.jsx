@@ -23,7 +23,7 @@ const AboutUs = () => {
             transition={{ duration: 0.4 }}
           />
           <motion.img
-            src="./pixlr.png"
+            src="./images/pixlr.jpeg"
             alt="Roof Worker"
             className="absolute bottom-[-30px] right-[-15px] sm:bottom-[-40px] sm:right-[-20px] md:bottom-[-50px] md:right-[-30px] lg:bottom-[-60px] lg:right-[-40px] h-[100px] sm:h-[150px] md:h-[200px] lg:h-[300px] w-[100px] sm:w-[150px] md:w-[250px] lg:w-[320px] shadow-lg transition-all duration-500 hover:scale-105"
             initial={{ opacity: 0, scale: 0.8 }}

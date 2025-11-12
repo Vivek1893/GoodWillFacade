@@ -121,6 +121,8 @@ const Projects = () => {
                     loading="lazy"
                     className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110 "
                     onError={(e) => (e.target.src = "/fallback.jpg")}
+                    draggable="false"
+                    onContextMenu={(e) => e.preventDefault()}
                   />
                 </div>
 
@@ -151,6 +153,8 @@ const Projects = () => {
             src={selectedImage}
             alt="Selected Project Image"
             className="max-w-3xl max-h-[90vh] object-contain rounded-lg shadow-xl"
+            draggable="false"
+            onContextMenu={(e) => e.preventDefault()}
           />
 
           {/* Close Button */}

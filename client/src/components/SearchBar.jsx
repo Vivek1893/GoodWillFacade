@@ -219,6 +219,8 @@ const SearchBar = () => {
                     onError={(e) => {
                       e.target.src = "/fallback.jpg";
                     }}
+                    draggable="false"
+                    onContextMenu={(e) => e.preventDefault()}
                   />
                   <div className="flex-1 min-w-0">
                     <h4 className="text-sm sm:text-base font-semibold text-[#0B3558] group-hover:text-[#F37021] transition-colors truncate">

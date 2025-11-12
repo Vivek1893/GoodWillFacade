@@ -99,6 +99,8 @@ const Projects = () => {
                 loading="lazy"
                 className="w-full h-full object-cover object-center brightness-90 
                 transform transition duration-500 group-hover:scale-110"
+                draggable="false"
+                onContextMenu={(e) => e.preventDefault()}
               />
             </div>
 

@@ -443,6 +443,8 @@ const ProjectDetailDynamic = () => {
             onClick={() =>
               handleImageInteraction(project.gallery?.[0] || project.img, 0)
             }
+            draggable="false"
+            onContextMenu={(e) => e.preventDefault()}
           />
 
           {/* Gallery Thumbnails */}
@@ -457,6 +459,8 @@ const ProjectDetailDynamic = () => {
                   onClick={() => handleImageInteraction(img, index + 1)}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
+                  draggable={false}
+                  onContextMenu={(e) => e.preventDefault()}
                 />
               ))}
             </div>
@@ -519,6 +523,8 @@ const ProjectDetailDynamic = () => {
                 src={selectedImage}
                 alt="Enlarged view"
                 className="max-w-full max-h-[90vh] object-contain rounded-lg"
+                draggable="false"
+                onContextMenu={(e) => e.preventDefault()}
               />
               {project.gallery && project.gallery.length > 1 && (
                 <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/50 text-white px-3 py-1 rounded-full text-sm">
