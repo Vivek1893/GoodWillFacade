@@ -255,7 +255,7 @@ const MS_Structure = () => {
             >
               <div className="relative rounded-tl-4xl rounded-br-4xl overflow-hidden">
                 <img
-                  src="/servicesimg/ms_img/MS 2.jpg"
+                  src="/servicesimg/ms_img/MS 2.webp"
                   alt="MS_Structure"
                   className="w-full h-[600px] object-fill transition-transform duration-700 group-hover:scale-105"
                 />

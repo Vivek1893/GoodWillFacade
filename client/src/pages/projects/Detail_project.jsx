@@ -71,6 +71,7 @@ const Residential = () => {
           rel="canonical"
           href="https://thegoodwillfacade.com/projects/Detail_project"
         />
+        <meta name="robots" content="index, follow" />
 
         {/* ✅ Open Graph */}
         <meta

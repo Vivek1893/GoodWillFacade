@@ -97,6 +97,7 @@ const ContactSection = () => {
         />
 
         <link rel="canonical" href="https://thegoodwillfacade.com/ContactUs" />
+        <meta name="robots" content="index, follow" />
 
         {/* Open Graph */}
         <meta

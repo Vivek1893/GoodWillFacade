@@ -391,7 +391,7 @@ const Navbar = () => {
                 <FaFacebookF size={20} />
               </a>
               <a
-                href="https://www.instagram.com/"
+                href="https://www.instagram.com/thegoodwillfacade?utm_source=qr&igsh=MWdvNnAwMmJwNGluNA%3D%3D"
                 target="_blank"
                 rel="noreferrer"
                 className="text-[#E4405F] hover:opacity-80"

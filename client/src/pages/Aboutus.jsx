@@ -22,17 +22,35 @@ const About = () => {
         />
 
         <link rel="canonical" href="https://thegoodwillfacade.com/Aboutus" />
+        <meta name="robots" content="index, follow" />
 
         {/* Open Graph / Preview tags */}
         <meta
           property="og:title"
           content="About The Goodwill Facades | Best Facade Glazing Company"
         />
+        
+        {/* ✅ Preload all main images for faster first paint */}
+        <link rel="preload" as="image" href="/images/project7.webp" />
+        <link rel="preload" as="image" href="/images/logo1.webp" />
+        <link rel="preload" as="image" href="/images/Structural-Glazing-Works.webp" />
+        <link rel="preload" as="image" href="/images/about-bg.jpg" />
+        <link rel="preload" as="image" href="/images/ourstory1.webp" />
+        <link rel="preload" as="image" href="/images/ourstory2.webp" />
+        <link rel="preload" as="image" href="/images/Our-Vision.webp" />
+        <link rel="preload" as="image" href="/images/ourmission.webp" />
+        <link rel="preload" as="image" href="/images/ourvalue.webp" />
+
+        
+
         <meta
           property="og:description"
           content="We deliver premium facade engineering, glazing, aluminium systems and architectural facade solutions across India."
         />
-        <meta property="og:url" content="https://thegoodwillfacade.com/Aboutus" />
+        <meta
+          property="og:url"
+          content="https://thegoodwillfacade.com/Aboutus"
+        />
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
@@ -45,8 +63,6 @@ const About = () => {
         {/* Robot instructions */}
         <meta name="robots" content="index, follow" />
       </Helmet>
-
-
 
       {/* 🔹 About Banner */}
       <section className="relative w-full h-[50vh] sm:h-[60vh] md:h-screen max-h-[75vh] -mt-8 overflow-hidden">
@@ -107,9 +123,14 @@ const About = () => {
 
           {/* Right Side - Content - For md and lg screens content comes after image */}
           <div className="w-full lg:w-1/2 text-gray-900 space-y-4 sm:space-y-6 order-2 md:order-2 lg:order-2">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#171755] leading-tight">
-              About Us
-            </h2>
+            <div className="flex flex-col items-center">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center font-bold text-[#171755] leading-tight">
+                About Us
+              </h2>
+
+              <div className="w-12 sm:w-15 h-[3px] sm:h-[3px] bg-[#F37021] mt-2 rounded-full"></div>
+            </div>
+
             <p className="text-sm sm:text-base md:text-lg leading-relaxed">
               Welcome to{" "}
               <span className="font-semibold text-[#EC7310]">
@@ -147,14 +168,24 @@ const About = () => {
       {/* 🔹 OUR STORY */}
       <section className="bg-gray-50 py-8 sm:py-12 md:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
-          <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-8 sm:mb-10 md:mb-12">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#171755] ">
-              Our Story
-            </h2>
-            <p className="mt-4 lg:mt-0 max-w-xl text-gray-900 text-sm sm:text-base md:text-lg">
-              At THE GOODWILL FACADE, we redefine architectural elegance with
-              cutting-edge façade engineering and design solutions.
-            </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 items-start lg:items-center gap-4 mb-8 sm:mb-10 md:mb-12">
+            {/* Left column: H2 centered horizontally */}
+            <div className="w-full flex flex-col items-center justify-center">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#171755] text-center">
+                Our Story
+              </h2>
+
+              {/* ✅ underline centered */}
+              <div className="w-12 sm:w-15 h-[3px] sm:h-[3px] bg-[#F37021] mt-2 rounded-full"></div>
+            </div>
+
+            {/* Right column: paragraph stays to the right on lg, below on small */}
+            <div className="w-full">
+              <p className="mt-4 lg:mt-0 max-w-xl text-gray-900 text-sm sm:text-base md:text-lg">
+                At THE GOODWILL FACADE, we redefine architectural elegance with
+                cutting-edge façade engineering and design solutions.
+              </p>
+            </div>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 items-center">
@@ -169,9 +200,12 @@ const About = () => {
               </p>
 
               <div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                <h3 className="text-xl font-semibold text-center text-gray-900 mb-2">
                   Who We Are
                 </h3>
+
+                <div className="w-12 sm:w-15 h-[2px] sm:h-[3px] bg-[#F37021] mt-2 rounded-full mx-auto"></div>
+
                 <p className="text-gray-900 text-sm sm:text-base md:text-lg leading-relaxed">
                   We are a specialist façade design and engineering group
                   committed to providing extensive services to developers,
@@ -181,9 +215,11 @@ const About = () => {
               </div>
 
               <div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                <h3 className="text-xl font-semibold text-center text-gray-900 mb-2">
                   Why We Exist
                 </h3>
+                <div className="w-12 sm:w-15 h-[2px] sm:h-[3px] bg-[#F37021] mt-2 rounded-full mx-auto"></div>
+
                 <p className="text-gray-900 text-sm sm:text-base md:text-lg leading-relaxed">
                   Our mission is to blend design excellence with engineering
                   accuracy — helping clients create iconic structures that stand
@@ -224,7 +260,7 @@ const About = () => {
               <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-[#171755] uppercase tracking-wide">
                 Our Vision
               </h3>
-              <div className="w-12 h-[2px] bg-[#F37021] mx-auto"></div>
+              <div className="w-12 sm:w-15 h-[2px] sm:h-[3px] bg-[#F37021] mx-auto"></div>
               <p className="text-gray-900 text-sm sm:text-base md:text-lg text-left leading-relaxed px-2">
                 See Farther To Seek Out Competitive Business Advantages For Our
                 Clients Through The Innovative Use Of Technology And To Help
@@ -242,7 +278,7 @@ const About = () => {
               <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-[#171755] uppercase tracking-wide">
                 Our Mission
               </h3>
-              <div className="w-12 h-[2px] bg-[#F37021] mx-auto"></div>
+              <div className="w-12 sm:w-15 h-[2px] sm:h-[3px] bg-[#F37021] mx-auto"></div>
               <p className="text-gray-900 text-sm sm:text-base md:text-lg text-left leading-relaxed px-2">
                 To Deliver Best To The Our Clients Through Innovative Use Of New
                 Technologies, Support, Services And Customer Referrals; And Also
@@ -260,7 +296,7 @@ const About = () => {
               <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-[#171755] uppercase tracking-wide">
                 Core Values
               </h3>
-              <div className="w-12 h-[2px] bg-[#F37021] mx-auto"></div>
+              <div className="w-12 sm:w-15 h-[2px] sm:h-[3px] bg-[#F37021] mx-auto"></div>
               <p className="text-gray-900 text-sm sm:text-base md:text-lg text-left leading-relaxed px-2">
                 Our growth and success are based upon ethical practices,
                 integrity, respect, responsibility, safety, and trust.

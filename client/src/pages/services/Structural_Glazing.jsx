@@ -47,17 +47,17 @@ const Structural_Glazing = () => {
     {
       id: 1,
       title: "MAPLE SQUARE",
-      img: "/servicesimg/structural_img/MAPLE SQUARE - BHARUCH.webp",
+      img: "/servicesimg/structural_img/MAPLE SQUARE - BHARUCH.jpg",
     },
     {
       id: 2,
       title: "CANAL POINT",
-      img: "/servicesimg/structural_img/CANAL POINT - SURAT.webp",
+      img: "/servicesimg/structural_img/CANAL POINT - SURAT.jpg",
     },
     {
       id: 3,
       title: "MILESTONE INDIGO",
-      img: "/servicesimg/structural_img/MILESTONE INDIGO - SURAT.webp",
+      img: "/servicesimg/structural_img/MILESTONE INDIGO - SURAT.jpg",
     },
     {
       id: 4,
@@ -146,7 +146,7 @@ const Structural_Glazing = () => {
         </div>
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-blue-800/60 z-10"></div>
         <img
-          src="/servicesimg/structural_img/Structural-Glazing-side-bg.webp"
+          src="/servicesimg/structural_img/Structural-Glazing-side-bg.jpg"
           alt="Structural Glazing"
           className="w-full h-full object-cover"
         />
@@ -230,7 +230,7 @@ const Structural_Glazing = () => {
             >
               <div className="relative rounded-tl-4xl rounded-br-4xl overflow-hidden">
                 <img
-                  src="/servicesimg/structural_img/Structural-Glazing-side-bg.webp"
+                  src="/servicesimg/structural_img/Structural-Glazing-side-bg.jpg"
                   alt="Structural Glazing Installation"
                   className="w-full h-[600px] object-fill transition-transform duration-700 group-hover:scale-105"
                 />

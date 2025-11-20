@@ -92,17 +92,19 @@ const Projects = () => {
             variants={cardVariants}
           >
             {/* Image */}
-            <div className="w-full h-[200px] sm:h-[250px] md:h-[320px] lg:h-[450px] overflow-hidden">
+            <div className="w-full h-[350px] sm:h-[350px] md:h-[320px] lg:h-[450px] overflow-hidden">
               <img
                 src={project.img}
                 alt={project.title}
                 loading="lazy"
                 className="w-full h-full object-cover object-center brightness-90 
                 transform transition duration-500 group-hover:scale-110"
+                draggable="false"
+                onContextMenu={(e) => e.preventDefault()}
               />
             </div>
 
-            {/* Title Below Image */}
+          
             {/* Title Below Image */}
             <div className="py-3 sm:py-4 px-3 flex flex-col items-center">
               <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-[#0B3558] text-center">

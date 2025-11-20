@@ -28,23 +28,7 @@ import Project_list from "./pages/projects/Project_list";
 import Detail_project from "./pages/projects/Detail_project.jsx";
 import ProjectDetailDynamic from "./pages/projects/ProjectDetailDynamic.jsx";
 
-// Detail project pages  ✅ fixed extension/case
-import Ambit from "./pages/projects/project_info/Ambit.jsx";
-import GoyalAspire from "./pages/projects/project_info/GoyalAspire.jsx";
-import SaiAashish from "./pages/projects/project_info/SaiAashish";
-import Parle from "./pages/projects/project_info/Parle.jsx";
-import Poloelevate from "./pages/projects/project_info/Poloelevate.jsx";
-import Saisignature from "./pages/projects/project_info/Saisignature.jsx";
-import Shivenarise from "./pages/projects/project_info/Shivenarise.jsx";
-import Shreenilkanth from "./pages/projects/project_info/Shreenilkanth.jsx";
-import Skyrise from "./pages/projects/project_info/Skyrise.jsx";
-import Speranza from "./pages/projects/project_info/Speranza.jsx";
-import Stonecladding from "./pages/projects/project_info/Stonecladding.jsx";
-import Suntrade from "./pages/projects/project_info/Suntrade.jsx";
-import Velocity from "./pages/projects/project_info/Velocity.jsx";
-import Viviana from "./pages/projects/project_info/Viviana.jsx";
-import Western from "./pages/projects/project_info/Western.jsx";
-import Zircon from "./pages/projects/project_info/Zircon.jsx";
+
 
 
 
@@ -93,29 +77,8 @@ function App() {
           <Route path="/projectpage" element={<Projectpage />} />
           <Route path="/contact" element={<Contact />} />
 
-          {/* Detail project pages */}
-          <Route path="/projects/ambit" element={<Ambit />} />
-         <Route path="/projects/goyal-aspire" element={<GoyalAspire />} />
-         <Route path="/projects/sai-aashish" element={<SaiAashish />} />
-         <Route path="/projects/parle" element={<Parle />} />
-         <Route path="/projects/poloelevate" element={<Poloelevate />} />
-          <Route path="/projects/saisignature" element={<Saisignature />} />
-           <Route path="/projects/shivenarise" element={<Shivenarise />} />
-            <Route path="/projects/shreenilkanth" element={<Shreenilkanth />} />
-             <Route path="/projects/Skyrise" element={<Skyrise />} />
-              <Route path="/projects/speranza" element={<Speranza />} />
-               <Route path="/projects/stonecladding" element={<Stonecladding />} />
-                <Route path="/projects/suntrade" element={<Suntrade />} />
-                 <Route path="/projects/velocity" element={<Velocity />} />
-                  <Route path="/projects/viviana" element={<Viviana />} />
-                   <Route path="/projects/western" element={<Western />} />
-                    <Route path="/projects/zircon" element={<Zircon />} />
-
-
-
-
-
-          {/* Add more detail project routes here */}
+         
+         
         </Routes>
 
         {/* Footer */}
